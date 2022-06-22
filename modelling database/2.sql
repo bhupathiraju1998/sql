@@ -1,0 +1,7 @@
+CREATE TABLE post(
+  post_id INTEGER NOT NULL PRIMARY KEY,
+  content TEXT,
+  published_at DATETIME,
+  user_id INTEGER,
+  FOREIGN KEY (user_id) REFERENCES USER(id) ON DELETE CASCADE
+)

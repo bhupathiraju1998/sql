@@ -1,0 +1,13 @@
+SELECT
+  NAME,
+  YEAR,
+  COUNT(YEAR) AS no_of_matches,
+  SUM(SCORE) AS runs_scored
+FROM
+  PLAYER_MATCH_DETAILS
+GROUP BY
+  NAME,
+  YEAR
+ORDER BY
+  name ASC,
+  YEAR ASC;

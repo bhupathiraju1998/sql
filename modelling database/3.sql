@@ -1,0 +1,9 @@
+CREATE TABLE COMMENT(
+  comment_id INT NOT NULL PRIMARY KEY,
+  content TEXT,
+  commented_at DATETIME,
+  user_id INT,
+  post_id INT,
+  FOREIGN KEY(user_id) REFERENCES USER(id) ON DELETE CASCADE,
+  FOREIGN KEY(post_id) REFERENCES POST(post_id) ON DELETE CASCADE
+);

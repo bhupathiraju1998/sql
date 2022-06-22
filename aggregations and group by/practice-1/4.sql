@@ -1,0 +1,9 @@
+SELECT
+  NAME,
+  MAX(score) AS max_score
+FROM
+  PLAYER_MATCH_DETAILS
+GROUP BY
+  NAME
+ORDER BY
+  max_score DESC;

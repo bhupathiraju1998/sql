@@ -1,0 +1,9 @@
+SELECT
+  NAME,
+  SUM(fours) AS no_of_fours
+FROM
+  PLAYER_MATCH_DETAILS
+GROUP BY
+  NAME
+ORDER BY
+  no_of_fours DESC;

@@ -1,0 +1,6 @@
+CREATE TABLE user (
+  id INTEGER NOT NULL PRIMARY KEY,
+  name VARCHAR(250),
+  gender VARCHAR(50),
+  email_id VARCHAR(500)
+)
